@@ -1,0 +1,11 @@
+store:
+  type: directory
+  name: tiles
+
+metatile:
+  size: 1
+
+layer_names:
+  - places
+  - water
+  - earth
