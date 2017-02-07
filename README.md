@@ -23,6 +23,7 @@ It means "it breaks up; it falls to pieces; cut to pieces", according to [freela
 Check out the code, and then run:
 
 ```
+pip install -Ur requirements.txt
 python setup.py test
 python setup.py install
 ```
