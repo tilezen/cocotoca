@@ -1,6 +1,6 @@
 from .cocotoca import Overzoomer
-from .store import make_store
-from .store.metatile import MetatileStore
+from cocotoca.store import make_store
+from cocotoca.store.metatile import MetatileStore
 from ModestMaps.Core import Coordinate
 from flask import Flask, abort, g
 from tilequeue.format import lookup_format_by_extension
