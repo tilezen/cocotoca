@@ -1,5 +1,5 @@
 import os.path
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 def repo_file(name):
@@ -13,10 +13,11 @@ setup(
     version=repo_file('VERSION'),
     description='An overzooming microservice.',
     long_description=repo_file('README.md'),
-    author='Matt Amos <matt.amos@mapzen.com>',
+    author='Matt Amos',
+    author_email='matt.amos@mapzen.com>',
     url='https://github.com/tilezen/cocotoca',
     license=repo_file('LICENSE'),
-    packages=['cocotoca'],
+    packages=find_packages(exclude=['tests']),
     include_package_data=True,
     install_requires=[
         'flask',
