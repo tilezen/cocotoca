@@ -1,10 +1,12 @@
 import os.path
-from setuptools import setup, find_packages
+from setuptools import setup
+
 
 def repo_file(name):
     path = os.path.join(os.path.dirname(__file__), name)
     with open(path) as fh:
         return fh.read().strip()
+
 
 setup(
     name='cocotoca',

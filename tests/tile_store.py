@@ -1,5 +1,4 @@
 import unittest
-from ModestMaps.Core import Coordinate
 from tilequeue.format import json_format
 
 
@@ -29,13 +28,13 @@ class TestTileStore(unittest.TestCase):
     def test_tile_store(self):
         from ModestMaps.Core import Coordinate as C
 
-        self._check_tile_parent( 0, C(0, 0,  1), C(0, 0,  0))
+        self._check_tile_parent(0, C(0, 0, 1), C(0, 0, 0))
         self._check_tile_parent(10, C(0, 0, 11), C(0, 0, 10))
         self._check_tile_parent(11, C(0, 0, 12), C(0, 0, 11))
         self._check_tile_parent(12, C(0, 0, 13), C(0, 0, 12))
 
         self._check_tile_parent(10, C(128, 127, 11), C(64, 63, 10))
-        self._check_tile_parent( 9, C(128, 127, 11), C(32, 31,  9))
-        self._check_tile_parent( 8, C(128, 127, 11), C(16, 15,  8))
-        self._check_tile_parent( 7, C(128, 127, 11), C( 8,  7,  7))
-        self._check_tile_parent( 0, C(128, 127, 11), C( 0,  0,  0))
+        self._check_tile_parent(9, C(128, 127, 11), C(32, 31, 9))
+        self._check_tile_parent(8, C(128, 127, 11), C(16, 15, 8))
+        self._check_tile_parent(7, C(128, 127, 11), C(8, 7, 7))
+        self._check_tile_parent(0, C(128, 127, 11), C(0, 0, 0))

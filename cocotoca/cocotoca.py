@@ -1,6 +1,4 @@
 from cStringIO import StringIO
-from ModestMaps.Core import Coordinate
-from tilequeue.command import parse_layer_data
 from tilequeue.format import json_format
 from tilequeue.tile import calc_meters_per_pixel_dim
 from tilequeue.tile import coord_to_mercator_bounds
@@ -53,7 +51,6 @@ class Overzoomer(object):
 
         return tile_data
 
-
     def _reformat_selected_layers(
             self, json_tile_data, coord, format, layers):
         """
@@ -83,7 +80,6 @@ class Overzoomer(object):
                            bounds_merc, bounds_lnglat)
         tile_data = tile_data_file.getvalue()
         return tile_data
-
 
     def _decode_json_tile_for_layers(self, tile_data, layers):
         layer_names_to_keep = set(layers)

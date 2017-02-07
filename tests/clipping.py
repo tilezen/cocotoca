@@ -57,8 +57,8 @@ class TestPoint(unittest.TestCase):
         rings = feature['geometry']['coordinates']
         self.assertEqual(1, len(rings))
         self.assertEqual(5, len(rings[0]))
-        self.assertEqual([-122.63763428,37.85533859], rings[0][0])
-        self.assertEqual([-122.64038086,37.85533859], rings[0][1])
-        self.assertEqual([-122.64038086,37.85750716], rings[0][2])
-        self.assertEqual([-122.63763428,37.85750716], rings[0][3])
-        self.assertEqual([-122.63763428,37.85533859], rings[0][4])
+        self.assertEqual([-122.63763428, 37.85533859], rings[0][0])
+        self.assertEqual([-122.64038086, 37.85533859], rings[0][1])
+        self.assertEqual([-122.64038086, 37.85750716], rings[0][2])
+        self.assertEqual([-122.63763428, 37.85750716], rings[0][3])
+        self.assertEqual([-122.63763428, 37.85533859], rings[0][4])
