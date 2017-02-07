@@ -1,5 +1,7 @@
 # Cocotoca
 
+![Build status](https://circleci.com/gh/tilezen/cocotoca.png?style=shield&circle-token=7571a76b520668c8b6d8a748ac4302dc724f120c)
+
 **Cocotoca is very alpha and probably broken!** Help would be most welcome in making it less broken.
 
 An overzooming microservice.
